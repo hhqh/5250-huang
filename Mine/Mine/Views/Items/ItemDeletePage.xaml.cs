@@ -53,7 +53,7 @@ namespace Mine.Views
         /// <param name="e"></param>
         public async void DeleteItem_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "DeleteItem", viewModel.DataStore);
+            MessagingCenter.Send(this, "DeleteItem", viewModel.Item);
 
             await Navigation.PopModalAsync();
         }
