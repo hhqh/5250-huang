@@ -64,6 +64,19 @@ namespace UnitTests.Helpers
             Assert.AreEqual(true, result == 0);
         }
 
+        [Test]
+        public void RollDice_InValid_Roll_1_Dice_0_Should_Return_Zero()
+        {
+            // Arrange
+
+            // Act
+            var result = DiceHelper.RollDice(1, 0);
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(true, result == 0);
+        }
 
         [Test]
         public void RollDice_Invalid_Roll_Forced_1_Should_Return_1()
